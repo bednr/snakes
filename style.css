@@ -1,0 +1,62 @@
+:root{
+    --snake1color:darkolivegreen;
+    --snake2color:darkgoldenrod;
+}
+body{
+    display: block;
+    background-color: rgb(250, 231, 196);
+    color: rgb(50, 35, 35);
+    font-family:  Verdana, Geneva, Tahoma, sans-serif;
+}
+.gameArea{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+h1{
+    margin: auto;
+    text-align: center;
+}
+.settings{
+    display: flex;
+    margin-left: 30%;
+    margin-top: 5px;
+}
+kbd {
+    border-radius: 2px;
+    padding: 1px 5px;
+    border: 1px solid black;
+    font-family: monospace;
+  }
+.grid-container {
+align-self: center;
+    margin: 2em auto;
+    height: 320px;
+    width: 320px;
+    display: inline-grid;
+    grid-template-rows: repeat(33, 1fr);
+    grid-template-columns: repeat(33, 1fr);
+    border: 1px solid rgb(50, 35, 35);
+}
+  
+.snake1 {
+    background-color: var(--snake1color);
+}
+.snake2 {
+    background-color: var(--snake2color);
+}
+
+  
+.food {
+    background-color: rgb(175, 67, 67);
+}
+
+.menuText {
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    height: 1px;
+    width: 1px;
+    text-align: center;
+}

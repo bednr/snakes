@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <H1>SNAKES</H1>
+    <div class="settings">
+        <details>
+            <summary>Options</summary>
+            <form id='optForm' method="post" onchange="commitChange();">
+                <label for="snake1">Color of snake1: </label>
+                <select name="snake1" id="snake1color">
+                    <option value="darkolivegreen">Green</option>
+                    <option value="firebrick">Red</option>
+                    <option value="orchid">Pink</option>
+                    <option value="rebeccapurple">Violet</option>
+                    <option value="darkgoldenrod">Yellow</option>
+                </select><br>
+                <label for="snake2">Color of snake2: </label>
+                <select name="snake2" id="snake2color">
+                    <option value="darkgoldenrod">Yellow</option>
+                    <option value="darkolivegreen">Green</option>
+                    <option value="firebrick">Red</option>
+                    <option value="orchid">Pink</option>
+                    <option value="rebeccapurple">Violet</option>
+                </select><br>
+                <label for="gameSpeed">Gamespeed: </label>
+                <select name="gameSpeed" id="gameSpeed">
+                    <option value="80">Normal</option>
+                    <option value="50">Fast</option>
+                    <option value="20">Super fast</option>
+
+                </select><br>
+            </form>
+        </details>
+    </div>
+    <div class="settings">
+        <details>
+            <summary>Controls</summary>
+            Player 1: <kbd>W</kbd> <kbd>S</kbd> <kbd>A</kbd> <kbd>D</kbd><br>
+            Player 2: <kbd>↑</kbd> <kbd>↓</kbd> <kbd>←</kbd> <kbd>→</kbd><br>
+        </details>
+    </div>
+
+
+    <div class="gameArea">
+        <div class="grid-container">
+        </div>
+    </div>
+    <script src="script.js" defer></script>
+</body>
+
+</html>
